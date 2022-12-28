@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./Asset/client3 2.png"
+      type="image/x-icon"
+    />
+    <title>Shop || Quality pick</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="./Asset/Group 17.png" alt=""
+            /></a>
+
+            <form class="ms-4" role="search">
+              <button class="btn dropdown" type="submit">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  All
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"># NGN</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ê EUR</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">$CAD</a>
+                  </li>
+                </ul>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search Scudin Products"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    $ USD
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"># NGN</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Ê EUR</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">$CAD</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    English
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Spanish</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Mandarin Chinese</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">login</a>
+                </li>
+
+                <li class="nav-item dropdown sign-up px-3">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sign up
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sell</a>
+                </li>
+                <li class="nav-item cart px-2">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-cart-shopping"></i> Cart</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <div class="mobile-search">
+      <div class="container">
+        <form class="d-flex" role="search">
+          <button class="btn dropdown" type="submit">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"># NGN</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Ê EUR</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">$CAD</a>
+              </li>
+            </ul>
+          </button>
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search Scudin Products"
+            aria-label="Search"
+          />
+          <button class="btn" type="submit">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <section class="header2 bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="./Asset/Vector.png" alt="" /> Categories</a
+            >
+            <button
+              class="navbar-toggler bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav gap-5 fs-5 ms-auto">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Scudin Ethos</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Sell On Scudin</a>
+                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Support</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="order">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="stuck text-end mt-3">
+              <i class="fa-solid fa-square-check fs-1"></i>
+              <span class="fs-5 ms-2">In stuck</span>
+            </div>
+            <img
+              src="./Asset/product-1 1.png"
+              alt="product"
+              class="img-fluid"
+            />
+            <div class="slider d-flex gap-4 me-lg-5">
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+              <img
+                src="/Asset/product-1 1.png"
+                alt=""
+                width="130px"
+                style="border: 1px solid #000"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="order-name">
+              <h1 class="my-3">
+                Kids Printed Strip Outfit For School And Home Use
+              </h1>
+              <div class="order-star d-flex">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p class="ms-4 px-4">Total 0 revies</p>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12 order-overview">
+                <h3>Quick Overview</h3>
+                <h1>$70.98</h1>
+                <li>Sold By: Scudin.com</li>
+                <li>Tax: $5.86 (8.25%)</li>
+                <li>Brand: Believe</li>
+                <li>Product Code: 102436587902</li>
+
+                <h4 class="mt-3">Select Purchase Option</h4>
+                <small>Choose Shipping Method</small>
+
+                <div class="mt-4 d-flex gap-2">
+                  <h4>Color:</h4>
+                  <p class="text-center p-3 bg-dark"></p>
+                  <p class="text-center p-3 bg-primary"></p>
+                  <p class="text-center p-3 bg-danger"></p>
+                  <p class="text-center p-3 bg-info"></p>
+                  <p class="text-center p-3 bg-success"></p>
+                </div>
+
+                <div class="mt-4 d-flex gap-2">
+                  <p class="text-center p-2 p1">+</p>
+                  <p class="text-center p-2">1</p>
+                  <p class="text-center p-2 p1">-</p>
+                  <div>
+                    <a href="#" class="btn btn2 p2">ADD TO CART</a>
+                  </div>
+                  <p class="text-center p-2 p3">
+                    <i class="fa-solid fa-envelope"></i>
+                  </p>
+                  <p class="text-center p-2 p3">
+                    <i class="fa-solid fa-heart"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-12 order-chart">
+                <h3 class="text-center">Size Chart</h3>
+                <img src="./Asset/Rectangle 31.png" alt="" class="img-fluid" />
+
+                <div class="mt-4 d-flex gap-2">
+                  <h4>Size:</h4>
+                  <p class="text-center p-2">S</p>
+                  <p class="text-center p-2">M</p>
+                  <p class="text-center p-2">L</p>
+                  <p class="text-center p-2">XL</p>
+                  <p class="text-center p-2">xxl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-product my-5">
+      <div class="container">
+        <h4 class="my-5">Related Products (Slider)</h4>
+        <div class="row">
+          <div class="col-12">
+            <div class="slider d-flex gap-5">
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-product my-5">
+      <div class="container">
+        <h4 class="my-5">Featured Products (Slider)</h4>
+        <div class="row">
+          <div class="col-12">
+            <div class="slider d-flex gap-5">
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+
+              <div class="product-card" style="width: 220px">
+                <img src="./Asset/product-1 1.png" alt="..." width="220px" />
+
+                <div class="body mx-auto" style="width: 150px">
+                  <p class="title">My Product Name</p>
+                  <div class="star d-flex">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="mt-2">$80.98</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="slider related-product-btn d-flex gap-4 mt-5">
+                  <a href="#" class="btn btn2 px-5">Product Description</a>
+                  <a href="#" class="btn btn2 px-5">Reviews</a>
+                  <a href="#" class="btn btn2 px-5">Vendor Store</a>
+                  <a href="#" class="btn btn2 px-5">More Products</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-details p-3">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-lg-4 col-sm-12">
+            <div class="add-features">
+              <p>product details</p>
+
+              <p class="mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi magnam nulla itaque consequatur a vitae doloremque, nam
+                magni dolore, accusamus similique neque. Aspernatur quae iusto
+                nesciunt debitis non tempore optio facilis illo,
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="add-features">
+              <p>Size Chart & Additional Images</p>
+
+              <p class="mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi magnam nulla itaque consequatur a vitae doloremque, nam
+                magni dolore, accusamus similique neque. Aspernatur quae iusto
+                nesciunt debitis non tempore optio facilis illo,
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="add-features">
+              <p>Additional Product Features</p>
+              <p class="mt-5">
+                Note: *Reduce the product title font size. <br />
+                *Reduce the select purchase option font size. <br />
+                *Product code should be unique 12 digit numeric <br />
+                *Change all yellow colors to #E1A006 <br />
+                *Align the texts e.g., color, size in the middle of box <br />
+                *User can only select shipping method one time
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="./Asset/client3 2.png" alt="" />
+          </div>
+          <div class="col-6">
+            <div class="d-flex gap-2">
+              <img
+                src="./Asset/Rectangle 58.png"
+                alt=""
+                class="img-fluid ngn-flag"
+              />
+              <img src="./Asset/Rectangle 59.png" alt="" class="img-fluid" />
+              <span
+                ><a
+                  class="dropdown-toggle fs-3"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"># NGN</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ê EUR</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">$CAD</a>
+                  </li>
+                </ul></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer copyright">
+      <p>&copy; 2022. Scudin.com, Inc. All Rights Reserved.</p>
+    </div>
+
+    <section class="mobile-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center text-light p-2">
+              <div>
+                <i class="fa-solid fa-house"></i>
+                <h5 class="fs-6">Home</h5>
+              </div>
+              <div>
+                <i class="fa-solid fa-sliders"></i>
+                <h4 class="fs-6">Category</h4>
+              </div>
+              <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h5 class="fs-6">Feed</h5>
+              </div>
+              <div>
+                <i class="fa-solid fa-user"></i>
+                <h5 class="fs-6">Account</h5>
+              </div>
+              <div>
+                <i class="fa-solid fa-basket-shopping"></i>
+                <h5 class="fs-6">Orders</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/fc49c28ef9.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"
+  ></script>
+</html>
