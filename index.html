@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <!-- font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap");
+  </style>
 
-    <link
-      rel="shortcut icon"
-      href="./Asset/client3 2.png"
-      type="image/x-icon"
-    />
-    <title>Home || Sell on Scudin Page</title>
-  </head>
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <section class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img src="./Asset/Group 17.png" alt=""
-            /></a>
+  <link rel="shortcut icon" href="./Asset/client3 2.png" type="image/x-icon" />
+  <title>Home || Sell on Scudin Page</title>
+</head>
 
-            <form class="ms-4" role="search">
-              <button class="btn dropdown" type="submit">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  All
+<body>
+  <section class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Asset/Group 17.png" alt="" /></a>
+          <form action="https://scudin.com/products" id="__search">
+            <input name="data_from" value="search" hidden="">
+            <input name="page" value="1" hidden="">
+            <div class="input-group my-group">
+              <select class="selectpicker form-control input-lg" style="width: 20%;border-radius: 0px;"
+                data-live-search="true" role="menu" name="category" id="category">
+                <option value="" disabled="" selected=""> All</option>
+                <option value="9">Apparel</option>
+                <option value="10">- Men's Fashion</option>
+                <option value="82">-- Coats</option>
+                <option value="51">- Game Accessories</option>
+              </select>
+              <input type="text" autocomplete="off" style="width: 70%" class="form-control input-lg" name="name" value="" placeholder="Search Scudin Products">
+              <span class="input-group-btn" style="width: 5%">
+                <button class="btn btn-default search-button" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+              </span>
+
+            </div>
+          </form>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  $ USD
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#"># NGN</a></li>
@@ -62,460 +73,620 @@
                     <a class="dropdown-item" href="#">$CAD</a>
                   </li>
                 </ul>
-              </button>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search Scudin Products"
-                aria-label="Search"
-              />
-              <button class="btn" type="submit">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    $ USD
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"># NGN</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Ê EUR</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">$CAD</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    English
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">French</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Spanish</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Mandarin Chinese</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">login</a>
-                </li>
-
-                <li class="nav-item dropdown sign-up px-3">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Sign up
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sell</a>
-                </li>
-                <li class="nav-item cart px-2">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-cart-shopping"></i> Cart</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-
-    <div class="mobile-search">
-      <div class="container">
-        <form class="d-flex" role="search">
-          <button class="btn dropdown" type="submit">
-            <a
-              class="dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              All
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"># NGN</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Ê EUR</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">$CAD</a>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  English
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">French</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Spanish</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mandarin Chinese</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">login</a>
+              </li>
+
+              <li class="nav-item dropdown sign-up px-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sign up
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sell</a>
+              </li>
+              <li class="nav-item cart px-2">
+                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
               </li>
             </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <div class="mobile-search">
+    <div class="container">
+      <form class="d-flex" role="search">
+        <!-- <button class="btn dropdown" type="submit">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"># NGN</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Ê EUR</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">$CAD</a>
+            </li>
+          </ul>
+        </button> -->
+        <select class="selectpicker form-control input-lg" style="width: 30%;border-radius: 0px;"
+          data-live-search="true" role="menu" name="category" id="category">
+          <option value="" disabled="" selected=""> All</option>
+          <option value="9">Apparel</option>
+          <option value="10">- Men's Fashion</option>
+          <option value="82">-- Coats</option>
+          <option value="88">-- Traditional Wears</option>
+          <option value="90">-- Jeans</option>
+          <option value="127">-- Costumes</option>
+          <option value="129">-- Jackets</option>
+          <option value="130">-- Polos</option>
+          <option value="131">-- Suits</option>
+          <option value="132">-- Shirts</option>
+          <option value="133">-- Shorts</option>
+          <option value="134">-- Sleeveless t-shirts</option>
+          <option value="135">-- Sweaters</option>
+          <option value="136">-- Sweatshirts</option>
+          <option value="137">-- T-shirts</option>
+          <option value="138">-- Trousers &amp; Pants</option>
+          <option value="139">-- Vests</option>
+          <option value="140">-- Waistcoats</option>
+          <option value="234">-- Underwear</option>
+          <option value="11">- Women's Fashion</option>
+          <option value="66">-- Blouses &amp; Tops</option>
+          <option value="67">-- Coats</option>
+          <option value="72">-- Jumpsuits</option>
+          <option value="73">-- Gowns &amp; Dresses</option>
+          <option value="74">-- Swimsuits &amp; Rompers</option>
+          <option value="89">-- Traditional Wears</option>
+          <option value="91">-- Jeans</option>
+          <option value="106">-- Jackets</option>
+          <option value="107">-- Leggings</option>
+          <option value="108">-- Outfits</option>
+          <option value="109">-- Shirts</option>
+          <option value="110">-- Shorts</option>
+          <option value="111">-- Skirts</option>
+          <option value="112">-- Sleeveless T-Shirts</option>
+          <option value="113">-- Suits</option>
+          <option value="114">-- Sweaters</option>
+          <option value="115">-- Sweatshirts</option>
+          <option value="116">-- T-shirts</option>
+          <option value="117">-- Trousers &amp; Pants</option>
+          <option value="43">- Men Accessories</option>
+          <option value="45">-- Shop for Belt</option>
+          <option value="235">-- Hats</option>
+          <option value="236">-- Caps</option>
+          <option value="237">-- Wallets</option>
+          <option value="44">- Women Accessories</option>
+          <option value="119">-- Active Wears &amp; Bodies</option>
+          <option value="120">-- Boxers</option>
+          <option value="121">-- Panties</option>
+          <option value="122">-- Socks</option>
+          <option value="123">-- Stockings</option>
+          <option value="124">-- Tights</option>
+          <option value="125">-- Swimsuits</option>
+          <option value="126">-- Outfits</option>
+          <option value="128">- Cropped Pants</option>
+          <option value="52">Auto Parts &amp; Wheels</option>
+          <option value="53">- Parts &amp; Wheels</option>
+          <option value="54">- Tires</option>
+          <option value="55">- Auto Batteries</option>
+          <option value="1">Automotive</option>
+          <option value="2">- SUVs</option>
+          <option value="3">- Trucks &amp; Trailers</option>
+          <option value="4">- Cars &amp; Sedans</option>
+          <option value="19">- Vans</option>
+          <option value="42">- Powersports</option>
+          <option value="20">Baby Products</option>
+          <option value="41">- Baby Diapers</option>
+          <option value="97">- Baby Oil &amp; Lotion</option>
+          <option value="98">- Baby Blankets</option>
+          <option value="99">- Baby Accessories</option>
+          <option value="21">Beauty</option>
+          <option value="23">- Skincare Products</option>
+          <option value="24">- Cosmetics</option>
+          <option value="25">- Shop for Beauty Products</option>
+          <option value="22">Books &amp; Office Supplies</option>
+          <option value="38">- Shop for Textbooks</option>
+          <option value="70">- Novels</option>
+          <option value="71">- School Supplies</option>
+          <option value="238">- Printing Paper</option>
+          <option value="26">Camera &amp; Photo</option>
+          <option value="35">- Digital Cameras</option>
+          <option value="61">- Camera Accessories</option>
+          <option value="27">Cell Phone &amp; Devices</option>
+          <option value="28">- Cell Phones</option>
+          <option value="29">- Phone Accessories</option>
+          <option value="30">Children's Clothes</option>
+          <option value="12">- Shop for Boys</option>
+          <option value="92">-- Jeans</option>
+          <option value="103">-- Tops &amp; Shirts</option>
+          <option value="104">-- Hoodies &amp; Coats</option>
+          <option value="105">-- Pants &amp; Trousers</option>
+          <option value="192">-- Activewear</option>
+          <option value="193">-- Jackets</option>
+          <option value="194">-- Down jackets</option>
+          <option value="195">-- Outfits</option>
+          <option value="196">-- Waistcoats</option>
+          <option value="197">-- Sweaters</option>
+          <option value="198">-- Shorts</option>
+          <option value="199">-- Sweatshirts</option>
+          <option value="200">-- T-shirts</option>
+          <option value="201">-- Vests</option>
+          <option value="202">-- Swimwear</option>
+          <option value="204">-- Socks</option>
+          <option value="206">-- Accessories</option>
+          <option value="220">-- Belts</option>
+          <option value="223">-- Hats</option>
+          <option value="225">-- Caps</option>
+          <option value="232">-- Underwear</option>
+          <option value="31">- Shop for Girls</option>
+          <option value="100">-- Gowns &amp; Dresses</option>
+          <option value="101">-- Tops &amp; Skirts</option>
+          <option value="179">-- Coats</option>
+          <option value="180">-- Jumpsuits</option>
+          <option value="181">-- Jeans</option>
+          <option value="182">-- Leggings</option>
+          <option value="183">-- Outfits</option>
+          <option value="184">-- Shirts</option>
+          <option value="185">-- Shorts</option>
+          <option value="186">-- Sweaters</option>
+          <option value="187">-- Sweatshirts</option>
+          <option value="188">-- Tights</option>
+          <option value="189">-- T-shirts</option>
+          <option value="190">-- Vests</option>
+          <option value="191">-- Waistcoats</option>
+          <option value="203">-- Swimwear</option>
+          <option value="205">-- Socks</option>
+          <option value="207">-- Accessories</option>
+          <option value="221">-- Belts</option>
+          <option value="222">-- Scarves</option>
+          <option value="224">-- Hats</option>
+          <option value="233">-- Underwear</option>
+          <option value="32">- Superheroes</option>
+          <option value="208">-- Marvel Avengers</option>
+          <option value="209">-- Starwars</option>
+          <option value="210">-- Captain America</option>
+          <option value="211">-- Spiderman</option>
+          <option value="212">-- Black Panther</option>
+          <option value="213">-- Frozen</option>
+          <option value="214">-- Lady Bug</option>
+          <option value="33">- Shop for New Born</option>
+          <option value="226">-- Onesies &amp; Bodysuits</option>
+          <option value="227">-- Sleepwear</option>
+          <option value="228">-- Outfits &amp; Sets</option>
+          <option value="229">-- Accessories</option>
+          <option value="230">-- Bibs &amp; Burp Cloths</option>
+          <option value="231">-- Socks</option>
+          <option value="34">- Kid's Toys &amp; Games</option>
+          <option value="215">-- Toy Cars</option>
+          <option value="216">-- Minions</option>
+          <option value="217">-- Peppa Pigs</option>
+          <option value="218">-- Paw Patrol</option>
+          <option value="219">-- Wild Kratts</option>
+          <option value="5">Computer</option>
+          <option value="6">- Desktops</option>
+          <option value="266">-- ThinkCentre</option>
+          <option value="7">- Laptops</option>
+          <option value="267">-- Chromebook</option>
+          <option value="268">-- ThinkPad</option>
+          <option value="8">- Tablets</option>
+          <option value="13">- Software</option>
+          <option value="14">- Video Games</option>
+          <option value="59">- Computer Accessories</option>
+          <option value="39">Electronics &amp; TVs</option>
+          <option value="40">- Electronics &amp; TVs</option>
+          <option value="62">- Refrigerator</option>
+          <option value="63">- Microwave Oven</option>
+          <option value="265">- Home Appliances</option>
+          <option value="46">Footwear</option>
+          <option value="47">- Shoes for Men</option>
+          <option value="159">-- Dress Shoes</option>
+          <option value="161">-- Brogues</option>
+          <option value="162">-- Derby</option>
+          <option value="163">-- Flip-flops</option>
+          <option value="164">-- Loafers</option>
+          <option value="165">-- Sandals</option>
+          <option value="166">-- Slip-on</option>
+          <option value="167">-- Sneakers</option>
+          <option value="177">-- Ankle Boots</option>
+          <option value="48">- Shoes for Women</option>
+          <option value="169">-- Ballet Shoes</option>
+          <option value="170">-- Espadrilles</option>
+          <option value="171">-- Loafers</option>
+          <option value="172">-- Mules</option>
+          <option value="173">-- Platform Shoes</option>
+          <option value="174">-- Pumps</option>
+          <option value="175">-- Sandals</option>
+          <option value="176">-- Sneakers</option>
+          <option value="178">-- Ankle Boots</option>
+          <option value="56">- Shoes for Boys</option>
+          <option value="57">- Shoes for Girls</option>
+          <option value="58">- Shoes for Newborns</option>
+          <option value="239">Furniture, Arts, &amp; Décor</option>
+          <option value="240">- Furniture &amp; Décor</option>
+          <option value="255">-- Fine Arts</option>
+          <option value="256">-- Hand-Made Decorative</option>
+          <option value="257">-- Curtains &amp; Blinds</option>
+          <option value="258">-- Sofas &amp; Couches</option>
+          <option value="241">- Mattresses</option>
+          <option value="263">-- Bed &amp; Accessories</option>
+          <option value="264">-- Mattresses</option>
+          <option value="141">Garden &amp; Pets Supplies</option>
+          <option value="142">- Home Garden</option>
+          <option value="143">- Pets Supplies</option>
+          <option value="242">Grocery &amp; Food Produce</option>
+          <option value="243">- Food Produce</option>
+          <option value="244">- Grocery &amp; Gourmet</option>
+          <option value="259">-- Rice</option>
+          <option value="260">-- Beans</option>
+          <option value="261">-- Condiments</option>
+          <option value="262">-- Non-Alcoholic Beverages</option>
+          <option value="248">Handbags &amp; Sunglasses</option>
+          <option value="249">- Bags &amp; Watches</option>
+          <option value="251">-- Handbags</option>
+          <option value="252">-- Purses</option>
+          <option value="253">-- Watches</option>
+          <option value="250">- Sunglasses</option>
+          <option value="254">-- Sunglasses</option>
+          <option value="77">Home Improvement &amp; Parts</option>
+          <option value="78">- Plumbing Materials</option>
+          <option value="79">- Roofing Materials</option>
+          <option value="80">- Tiles &amp; Marbles</option>
+          <option value="81">- Accessories</option>
+          <option value="83">-- Cements</option>
+          <option value="84">-- Concretes &amp; Sands</option>
+          <option value="85">-- Woods</option>
+          <option value="86">-- Doors &amp; Windows</option>
+          <option value="87">-- Paints &amp; Primers</option>
+          <option value="93">- Tools</option>
+          <option value="144">Industrial Machines</option>
+          <option value="145">- Industrial Machines</option>
+          <option value="147">-- Food Services</option>
+          <option value="148">-- Janitorial &amp; Sanitation</option>
+          <option value="149">-- Power &amp; Energy</option>
+          <option value="150">-- Automation</option>
+          <option value="151">-- IoT Manufacturing Equipment</option>
+          <option value="146">- Parts &amp; Accessories</option>
+          <option value="156">Kitchen Equipment</option>
+          <option value="157">- Food Preparation</option>
+          <option value="158">- Cooking Utensils</option>
+          <option value="245">Luggage &amp; Accessories</option>
+          <option value="246">- Luggage</option>
+          <option value="247">- Travel Accessories</option>
+          <option value="94">Musical Instruments &amp; Parts</option>
+          <option value="95">- Musical Instruments</option>
+          <option value="96">- Parts &amp; Accessories</option>
+          <option value="152">Sports &amp; Outdoors</option>
+          <option value="153">- Sports Equipment</option>
+          <option value="155">- Outdoors</option>
+          <option value="36">Video &amp; DVD, Audio</option>
+          <option value="37">- Wireless Speakers</option>
+          <option value="60">- Audio Accessories</option>
+          <option value="68">- DVD Players</option>
+          <option value="69">- Digital Audio Player</option>
+          <option value="49">Video Game Console</option>
+          <option value="50">- Game Consoles</option>
+          <option value="51">- Game Accessories</option>
+        </select>
+        <input class="form-control" style="width: 60%;border-radius: 0px;" type="search"
+          placeholder="Search Scudin Products" aria-label="Search" />
+        <button class="btn" type="submit" style="width: 10%;border-radius: 0px;">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <section class="header2 bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Asset/Vector.png" alt="" /> Categories</a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <input
-            class="form-control"
-            type="search"
-            placeholder="Search Scudin Products"
-            aria-label="Search"
-          />
-          <button class="btn" type="submit">
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-5 fs-5 ms-auto">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">Scudin Ethos</a>
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Sell On Scudin</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Support</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="showcase">
+    <div class="container">
+      <div class="div1 p-2">
+        <h2>Sell On Scudin</h2>
+        <p>Your shopping location is: City, Zip code, State</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-s-12">
+          <div class="showcase-text">
+            <h2>
+              Sell on Scudin with Proven Ecommerce Technologies. Reach
+              Millions of Customers Worldwide.
+            </h2>
+            <button class="btn btn1 px-5 my-4">Get Started</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-s-12">
+          <img src="./Asset/image 12.png" alt="" class="img-fluid mt-4" />
+        </div>
       </div>
     </div>
+  </section>
 
-    <section class="header2 bg-dark">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img src="./Asset/Vector.png" alt="" /> Categories</a
-            >
-            <button
-              class="navbar-toggler bg-light"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav gap-5 fs-5 ms-auto">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Scudin Ethos</a>
-                <a class="nav-link" href="#">About Us</a>
-                <a class="nav-link" href="#">Sell On Scudin</a>
-                <a class="nav-link" href="#">Contact Us</a>
-                <a class="nav-link" href="#">Contact Us</a>
-                <a class="nav-link" href="#">Support</a>
-              </div>
-            </div>
+  <section class="product my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="product-img mt-5">
+            <img src="./Asset/Scudin-product.png" alt="" class="img-fluid" />
           </div>
-        </nav>
-      </div>
-    </section>
-
-    <section class="showcase">
-      <div class="container">
-        <div class="div1 p-2">
-          <h2>Sell On Scudin</h2>
-          <p>Your shopping location is: City, Zip code, State</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6 col-s-12">
-            <div class="showcase-text">
-              <h2>
-                Sell on Scudin with Proven Ecommerce Technologies. Reach
-                Millions of Customers Worldwide.
-              </h2>
-              <button class="btn btn1 px-5 my-4">Get Started</button>
-            </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="product-text p-1">
+            <h2>
+              Drive Demands for Your Products Using Converging Technologies
+              that Meet The Customer’s Needs.
+            </h2>
           </div>
-          <div class="col-lg-6 col-s-12">
-            <img src="./Asset/image 12.png" alt="" class="img-fluid mt-4" />
-          </div>
+          <button class="btn btn1 px-5 my-4">Start Here. Sign Up</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="product my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-sm-12">
-            <div class="product-img mt-5">
-              <img src="./Asset/Scudin-product.png" alt="" class="img-fluid" />
-            </div>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="product-text p-1">
-              <h2>
-                Drive Demands for Your Products Using Converging Technologies
-                that Meet The Customer’s Needs.
-              </h2>
-            </div>
-            <button class="btn btn1 px-5 my-4">Start Here. Sign Up</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sell p-1">
-      <div class="container mt-5">
-        <h1 class="text-center mb-4">Why You Should Sell on Scudin</h1>
-        <div class="row g-5">
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card p-2" style="width: 24rem">
-              <img
-                src="./Asset/Rectangle 135.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Reach Millions of People While Selling on Scudin
-                </h5>
-                <p class="card-text mt-3">
-                  Use the best advanced selling tools to get your products to
-                  millions of customers worldwide.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card p-2" style="width: 24rem">
-              <img
-                src="./Asset/Rectangle 138.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Drive Demands, Sell More, and Fulfill Faster
-                </h5>
-                <p class="card-text mt-3">
-                  You will have the option to grow your business with fulfilment
-                  by Scudin Ethos to deliver orders faster.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card p-2" style="width: 24rem">
-              <img
-                src="./Asset/Rectangle 147.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Scale Your Profit Margin and Gain Economic Power
-                </h5>
-                <p class="card-text mt-3">
-                  YExperience increase in selling efficiency with API
-                  integration and make <br />
-                  economic gain.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card p-2" style="width: 24rem">
-              <img
-                src="./Asset/Rectangle 144.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Promote Products Online Reach More Audience
-                </h5>
-                <p class="card-text mt-3">
-                  Increase your sales by promoting your products and getting
-                  them in front of the right audience.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card p-2" style="width: 24rem">
-              <img
-                src="./Asset/Rectangle 145.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Opt in for Storage, Save Space, and Ship Orders Faster
-                </h5>
-                <p class="card-text mt-3">
-                  You will have the options to utilize Scudin storage services
-                  that help you get organize and ship faster.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card p-2" style="width: 24rem">
-              <img
-                src="./Asset/Rectangle 146.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Receive World class Service Support</h5>
-                <p class="card-text mt-3">
-                  Get 24/7 customer service and experience one of the best
-                  customer-centric support that makes you feel valued.
-                </p>
-              </div>
+  <section class="sell p-1">
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Why You Should Sell on Scudin</h1>
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card p-2" style="width: 24rem">
+            <img src="./Asset/Rectangle 135.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Reach Millions of People While Selling on Scudin
+              </h5>
+              <p class="card-text mt-3">
+                Use the best advanced selling tools to get your products to
+                millions of customers worldwide.
+              </p>
             </div>
           </div>
         </div>
-        <div class="sell-button my-3">
-          <button class="btn btn1 px-5 my-4 mx-auto">Sell On Scudin</button>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card p-2" style="width: 24rem">
+            <img src="./Asset/Rectangle 138.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Drive Demands, Sell More, and Fulfill Faster
+              </h5>
+              <p class="card-text mt-3">
+                You will have the option to grow your business with fulfilment
+                by Scudin Ethos to deliver orders faster.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="plan p-1">
-      <div class="container mt-5">
-        <h1 class="text-center">How to Sell on Scudin</h1>
-        <div class="row my-5 g-5">
-          <div class="col-lg-4 col-sm-12">
-            <div class="card ms-lg-auto" style="width: 20rem">
-              <div class="card-header"><h4>Sell with Basic Plan</h4></div>
-              <ul class="list-group-flush pe-4">
-                <li class="list-group-item mt-3">
-                  $0.00 / (always), a monthly free plan to get started
-                </li>
-
-                <li class="list-group-item my-5">Unlimited Products / Month</li>
-                <li class="list-group-item mb-5">
-                  For 35 or more units of items sold + additional selling fees
-                </li>
-              </ul>
-              <button class="btn btn1 px-5 m-4">Sell On Scudin</button>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card p-2" style="width: 24rem">
+            <img src="./Asset/Rectangle 147.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Scale Your Profit Margin and Gain Economic Power
+              </h5>
+              <p class="card-text mt-3">
+                YExperience increase in selling efficiency with API
+                integration and make <br />
+                economic gain.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-sm-12">
-            <div class="card mx-lg-auto" style="width: 20rem">
-              <div class="card-header"><h4>Sell with Business Plan</h4></div>
-              <ul class="list-group-flush pe-4">
-                <li class="list-group-item mt-3">
-                  $29.99 / Month <br />
-                  <span>(Recommended)</span>
-                </li>
-
-                <li class="list-group-item my-5">Unlimited Products / Month</li>
-                <li class="list-group-item mb-5">
-                  For 35 or more units of items sold + additional selling fees
-                </li>
-              </ul>
-              <button class="btn btn1 px-5 m-4">Sell On Scudin</button>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card p-2" style="width: 24rem">
+            <img src="./Asset/Rectangle 144.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Promote Products Online Reach More Audience
+              </h5>
+              <p class="card-text mt-3">
+                Increase your sales by promoting your products and getting
+                them in front of the right audience.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-sm-12">
-            <div class="card me-lg-auto" style="width: 20rem">
-              <div class="card-header"><h4>Sell with Ethos Premium</h4></div>
-              <ul class="list-group-flush pe-4">
-                <li class="list-group-item mt-3">
-                  $4,599.99 / Month <br />
-                  (for Enterprise)
-                </li>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card p-2" style="width: 24rem">
+            <img src="./Asset/Rectangle 145.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Opt in for Storage, Save Space, and Ship Orders Faster
+              </h5>
+              <p class="card-text mt-3">
+                You will have the options to utilize Scudin storage services
+                that help you get organize and ship faster.
+              </p>
+            </div>
+          </div>
+        </div>
 
-                <li class="list-group-item my-5">Unlimited Products / Month</li>
-                <li class="list-group-item">
-                  We will handle all the shipping and returns for items weighing
-                  20lbs (9.07kg) or less, while you focus on managing your
-                  business.
-                </li>
-              </ul>
-              <button class="btn btn1 px-5 m-4">Sell On Scudin</button>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card p-2" style="width: 24rem">
+            <img src="./Asset/Rectangle 146.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Receive World class Service Support</h5>
+              <p class="card-text mt-3">
+                Get 24/7 customer service and experience one of the best
+                customer-centric support that makes you feel valued.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="sell-button my-3">
+        <button class="btn btn1 px-5 my-4 mx-auto">Sell On Scudin</button>
+      </div>
+    </div>
+  </section>
 
-    <section class="mobile-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text-center text-light p-2">
-              <div>
-                <i class="fa-solid fa-house"></i>
-                <h5 class="fs-6">Home</h5>
-              </div>
-              <div>
-                <i class="fa-solid fa-sliders"></i>
-                <h4 class="fs-6">Category</h4>
-              </div>
-              <div>
-                <i class="fa-solid fa-wifi"></i>
-                <h5 class="fs-6">Feed</h5>
-              </div>
-              <div>
-                <i class="fa-solid fa-user"></i>
-                <h5 class="fs-6">Account</h5>
-              </div>
-              <div>
-                <i class="fa-solid fa-basket-shopping"></i>
-                <h5 class="fs-6">Orders</h5>
-              </div>
+  <section class="plan p-1">
+    <div class="container mt-5">
+      <h1 class="text-center">How to Sell on Scudin</h1>
+      <div class="row my-5 g-5">
+        <div class="col-lg-4 col-sm-12">
+          <div class="card ms-lg-auto" style="width: 20rem">
+            <div class="card-header">
+              <h4>Sell with Basic Plan</h4>
+            </div>
+            <ul class="list-group-flush pe-4">
+              <li class="list-group-item mt-3">
+                $0.00 / (always), a monthly free plan to get started
+              </li>
+
+              <li class="list-group-item my-5">Unlimited Products / Month</li>
+              <li class="list-group-item mb-5">
+                For 35 or more units of items sold + additional selling fees
+              </li>
+            </ul>
+            <button class="btn btn1 px-5 m-4">Sell On Scudin</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+          <div class="card mx-lg-auto" style="width: 20rem">
+            <div class="card-header">
+              <h4>Sell with Business Plan</h4>
+            </div>
+            <ul class="list-group-flush pe-4">
+              <li class="list-group-item mt-3">
+                $29.99 / Month <br />
+                <span>(Recommended)</span>
+              </li>
+
+              <li class="list-group-item my-5">Unlimited Products / Month</li>
+              <li class="list-group-item mb-5">
+                For 35 or more units of items sold + additional selling fees
+              </li>
+            </ul>
+            <button class="btn btn1 px-5 m-4">Sell On Scudin</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+          <div class="card me-lg-auto" style="width: 20rem">
+            <div class="card-header">
+              <h4>Sell with Ethos Premium</h4>
+            </div>
+            <ul class="list-group-flush pe-4">
+              <li class="list-group-item mt-3">
+                $4,599.99 / Month <br />
+                (for Enterprise)
+              </li>
+
+              <li class="list-group-item my-5">Unlimited Products / Month</li>
+              <li class="list-group-item">
+                We will handle all the shipping and returns for items weighing
+                20lbs (9.07kg) or less, while you focus on managing your
+                business.
+              </li>
+            </ul>
+            <button class="btn btn1 px-5 m-4">Sell On Scudin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center text-light p-2">
+            <div>
+              <i class="fa-solid fa-house"></i>
+              <h5 class="fs-6">Home</h5>
+            </div>
+            <div>
+              <i class="fa-solid fa-sliders"></i>
+              <h4 class="fs-6">Category</h4>
+            </div>
+            <div>
+              <i class="fa-solid fa-wifi"></i>
+              <h5 class="fs-6">Feed</h5>
+            </div>
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <h5 class="fs-6">Account</h5>
+            </div>
+            <div>
+              <i class="fa-solid fa-basket-shopping"></i>
+              <h5 class="fs-6">Orders</h5>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
 
-  <script
-    src="https://kit.fontawesome.com/fc49c28ef9.js"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://kit.fontawesome.com/fc49c28ef9.js" crossorigin="anonymous"></script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 </html>
