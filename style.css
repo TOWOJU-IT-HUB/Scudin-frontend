@@ -80,6 +80,10 @@ li {
   font-weight: 500;
   border-radius: 15px;
 }
+.btn1:hover {
+  background-color: #162447;
+  color: #fff;
+}
 
 /* product section */
 .product {
@@ -343,4 +347,152 @@ li {
   .mobile-search {
     display: none;
   }
+}
+
+.in-search {
+  background-color: #f2f2f2;
+  height: 100%;
+  border-radius: 20px;
+}
+.in-search form {
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  width: 100%;
+  font: 14px 400;
+  background-color: #d9d9d9;
+}
+.in-search input {
+  background-color: #d9d9d9;
+  border: none;
+}
+.in-search h2 {
+  border-bottom: #000000 1px dashed;
+}
+.blog .card {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 0px 2px #000000;
+}
+.blog .card h5 {
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+}
+.blog .card a {
+  color: #5433ff;
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 400;
+}
+.blog .col-sm-12 .outline {
+  color: #000000;
+  border: #5433ff 2px solid;
+  border-radius: 18px;
+}
+.sign-up-grid {
+  margin-top: 120px;
+}
+.sign-up-grid a,
+.blog-trending a {
+  color: #5433ff;
+}
+.facebook {
+  background-color: blue;
+}
+.instagram {
+  background-color: red;
+}
+.twitter {
+  background-color: #2f88f4;
+}
+.sign-up-grid input {
+  background-color: #ffffff;
+  border: #000000 solid 5px;
+  border-radius: 15px;
+}
+.storage td,
+.storage th,
+.fees-table td {
+  background-color: #d9d9d9;
+  border-bottom: 15px solid #ffffff;
+  padding: 10px;
+}
+.storage-plan .card {
+  border: none;
+}
+.storage-plan .card .card-header {
+  background-color: #002060;
+}
+.plan .card span,
+.pick-hub span {
+  color: #5433ff;
+}
+.storage-plan .short .card-header {
+  background-color: #d9d9d9;
+  color: #000000;
+}
+.storage-plan .short {
+  background-color: transparent;
+}
+.pick-hub .hub-item {
+  background-color: #d9d9d9;
+  color: #000000;
+}
+.btn3 {
+  width: 100%;
+  margin: auto;
+  border-radius: 0px;
+  border: none;
+}
+.fees-top {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.fees .fees-summary {
+  background-color: #ffffff;
+  height: 50vh;
+}
+.fees-explanation {
+  background-color: #ffffff;
+}
+.fees-calculator {
+  background-color: #fafbfc !important;
+  border: 1px #fff solid;
+}
+.map {
+  background-image: url(./Asset/image\ 24.png);
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+.blog-details {
+  padding: 20px;
+  background-color: #f2f2f2;
+  height: 50vh;
+}
+.mapping {
+  background: url(./Asset/PHOTO-2023-01-04-10-10-11\ 2.jpg);
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mapping .container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mapping h3 {
+  font-family: Nunito;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.mapping h4 {
+  margin-top: 130px;
+  font-family: Nunito;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
 }
