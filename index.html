@@ -41,37 +41,39 @@
             <a class="navbar-brand" href="#"
               ><img src="./Asset/Group 17.png" alt=""
             /></a>
-
-            <form class="ms-4" role="search">
-              <button class="btn dropdown" type="submit">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+            <form action="https://scudin.com/products" id="__search">
+              <input name="data_from" value="search" hidden="" />
+              <input name="page" value="1" hidden="" />
+              <div class="input-group my-group">
+                <select
+                  class="selectpicker form-control input-lg"
+                  style="width: 20%; border-radius: 0px"
+                  data-live-search="true"
+                  role="menu"
+                  name="category"
+                  id="category"
                 >
-                  All
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"># NGN</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Ê EUR</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">$CAD</a>
-                  </li>
-                </ul>
-              </button>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search Scudin Products"
-                aria-label="Search"
-              />
-              <button class="btn" type="submit">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-              </button>
+                  <option value="" disabled="" selected="">All</option>
+                  <option value="9">Apparel</option>
+                  <option value="10">- Men's Fashion</option>
+                  <option value="82">-- Coats</option>
+                  <option value="51">- Game Accessories</option>
+                </select>
+                <input
+                  type="text"
+                  autocomplete="off"
+                  style="width: 70%"
+                  class="form-control input-lg"
+                  name="name"
+                  value=""
+                  placeholder="Search Scudin Products"
+                />
+                <span class="input-group-btn" style="width: 5%">
+                  <button class="btn btn-default search-button" type="submit">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </span>
+              </div>
             </form>
 
             <button
@@ -149,7 +151,9 @@
                     <li>
                       <a class="dropdown-item" href="#">Another action</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
                     <li>
                       <a class="dropdown-item" href="#">Something else here</a>
                     </li>
@@ -174,33 +178,297 @@
     <div class="mobile-search">
       <div class="container">
         <form class="d-flex" role="search">
-          <button class="btn dropdown" type="submit">
-            <a
-              class="dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              All
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"># NGN</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Ê EUR</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">$CAD</a>
-              </li>
-            </ul>
-          </button>
+          <!-- <button class="btn dropdown" type="submit">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"># NGN</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Ê EUR</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">$CAD</a>
+            </li>
+          </ul>
+        </button> -->
+          <select
+            class="selectpicker form-control input-lg"
+            style="width: 30%; border-radius: 0px"
+            data-live-search="true"
+            role="menu"
+            name="category"
+            id="category"
+          >
+            <option value="" disabled="" selected="">All</option>
+            <option value="9">Apparel</option>
+            <option value="10">- Men's Fashion</option>
+            <option value="82">-- Coats</option>
+            <option value="88">-- Traditional Wears</option>
+            <option value="90">-- Jeans</option>
+            <option value="127">-- Costumes</option>
+            <option value="129">-- Jackets</option>
+            <option value="130">-- Polos</option>
+            <option value="131">-- Suits</option>
+            <option value="132">-- Shirts</option>
+            <option value="133">-- Shorts</option>
+            <option value="134">-- Sleeveless t-shirts</option>
+            <option value="135">-- Sweaters</option>
+            <option value="136">-- Sweatshirts</option>
+            <option value="137">-- T-shirts</option>
+            <option value="138">-- Trousers &amp; Pants</option>
+            <option value="139">-- Vests</option>
+            <option value="140">-- Waistcoats</option>
+            <option value="234">-- Underwear</option>
+            <option value="11">- Women's Fashion</option>
+            <option value="66">-- Blouses &amp; Tops</option>
+            <option value="67">-- Coats</option>
+            <option value="72">-- Jumpsuits</option>
+            <option value="73">-- Gowns &amp; Dresses</option>
+            <option value="74">-- Swimsuits &amp; Rompers</option>
+            <option value="89">-- Traditional Wears</option>
+            <option value="91">-- Jeans</option>
+            <option value="106">-- Jackets</option>
+            <option value="107">-- Leggings</option>
+            <option value="108">-- Outfits</option>
+            <option value="109">-- Shirts</option>
+            <option value="110">-- Shorts</option>
+            <option value="111">-- Skirts</option>
+            <option value="112">-- Sleeveless T-Shirts</option>
+            <option value="113">-- Suits</option>
+            <option value="114">-- Sweaters</option>
+            <option value="115">-- Sweatshirts</option>
+            <option value="116">-- T-shirts</option>
+            <option value="117">-- Trousers &amp; Pants</option>
+            <option value="43">- Men Accessories</option>
+            <option value="45">-- Shop for Belt</option>
+            <option value="235">-- Hats</option>
+            <option value="236">-- Caps</option>
+            <option value="237">-- Wallets</option>
+            <option value="44">- Women Accessories</option>
+            <option value="119">-- Active Wears &amp; Bodies</option>
+            <option value="120">-- Boxers</option>
+            <option value="121">-- Panties</option>
+            <option value="122">-- Socks</option>
+            <option value="123">-- Stockings</option>
+            <option value="124">-- Tights</option>
+            <option value="125">-- Swimsuits</option>
+            <option value="126">-- Outfits</option>
+            <option value="128">- Cropped Pants</option>
+            <option value="52">Auto Parts &amp; Wheels</option>
+            <option value="53">- Parts &amp; Wheels</option>
+            <option value="54">- Tires</option>
+            <option value="55">- Auto Batteries</option>
+            <option value="1">Automotive</option>
+            <option value="2">- SUVs</option>
+            <option value="3">- Trucks &amp; Trailers</option>
+            <option value="4">- Cars &amp; Sedans</option>
+            <option value="19">- Vans</option>
+            <option value="42">- Powersports</option>
+            <option value="20">Baby Products</option>
+            <option value="41">- Baby Diapers</option>
+            <option value="97">- Baby Oil &amp; Lotion</option>
+            <option value="98">- Baby Blankets</option>
+            <option value="99">- Baby Accessories</option>
+            <option value="21">Beauty</option>
+            <option value="23">- Skincare Products</option>
+            <option value="24">- Cosmetics</option>
+            <option value="25">- Shop for Beauty Products</option>
+            <option value="22">Books &amp; Office Supplies</option>
+            <option value="38">- Shop for Textbooks</option>
+            <option value="70">- Novels</option>
+            <option value="71">- School Supplies</option>
+            <option value="238">- Printing Paper</option>
+            <option value="26">Camera &amp; Photo</option>
+            <option value="35">- Digital Cameras</option>
+            <option value="61">- Camera Accessories</option>
+            <option value="27">Cell Phone &amp; Devices</option>
+            <option value="28">- Cell Phones</option>
+            <option value="29">- Phone Accessories</option>
+            <option value="30">Children's Clothes</option>
+            <option value="12">- Shop for Boys</option>
+            <option value="92">-- Jeans</option>
+            <option value="103">-- Tops &amp; Shirts</option>
+            <option value="104">-- Hoodies &amp; Coats</option>
+            <option value="105">-- Pants &amp; Trousers</option>
+            <option value="192">-- Activewear</option>
+            <option value="193">-- Jackets</option>
+            <option value="194">-- Down jackets</option>
+            <option value="195">-- Outfits</option>
+            <option value="196">-- Waistcoats</option>
+            <option value="197">-- Sweaters</option>
+            <option value="198">-- Shorts</option>
+            <option value="199">-- Sweatshirts</option>
+            <option value="200">-- T-shirts</option>
+            <option value="201">-- Vests</option>
+            <option value="202">-- Swimwear</option>
+            <option value="204">-- Socks</option>
+            <option value="206">-- Accessories</option>
+            <option value="220">-- Belts</option>
+            <option value="223">-- Hats</option>
+            <option value="225">-- Caps</option>
+            <option value="232">-- Underwear</option>
+            <option value="31">- Shop for Girls</option>
+            <option value="100">-- Gowns &amp; Dresses</option>
+            <option value="101">-- Tops &amp; Skirts</option>
+            <option value="179">-- Coats</option>
+            <option value="180">-- Jumpsuits</option>
+            <option value="181">-- Jeans</option>
+            <option value="182">-- Leggings</option>
+            <option value="183">-- Outfits</option>
+            <option value="184">-- Shirts</option>
+            <option value="185">-- Shorts</option>
+            <option value="186">-- Sweaters</option>
+            <option value="187">-- Sweatshirts</option>
+            <option value="188">-- Tights</option>
+            <option value="189">-- T-shirts</option>
+            <option value="190">-- Vests</option>
+            <option value="191">-- Waistcoats</option>
+            <option value="203">-- Swimwear</option>
+            <option value="205">-- Socks</option>
+            <option value="207">-- Accessories</option>
+            <option value="221">-- Belts</option>
+            <option value="222">-- Scarves</option>
+            <option value="224">-- Hats</option>
+            <option value="233">-- Underwear</option>
+            <option value="32">- Superheroes</option>
+            <option value="208">-- Marvel Avengers</option>
+            <option value="209">-- Starwars</option>
+            <option value="210">-- Captain America</option>
+            <option value="211">-- Spiderman</option>
+            <option value="212">-- Black Panther</option>
+            <option value="213">-- Frozen</option>
+            <option value="214">-- Lady Bug</option>
+            <option value="33">- Shop for New Born</option>
+            <option value="226">-- Onesies &amp; Bodysuits</option>
+            <option value="227">-- Sleepwear</option>
+            <option value="228">-- Outfits &amp; Sets</option>
+            <option value="229">-- Accessories</option>
+            <option value="230">-- Bibs &amp; Burp Cloths</option>
+            <option value="231">-- Socks</option>
+            <option value="34">- Kid's Toys &amp; Games</option>
+            <option value="215">-- Toy Cars</option>
+            <option value="216">-- Minions</option>
+            <option value="217">-- Peppa Pigs</option>
+            <option value="218">-- Paw Patrol</option>
+            <option value="219">-- Wild Kratts</option>
+            <option value="5">Computer</option>
+            <option value="6">- Desktops</option>
+            <option value="266">-- ThinkCentre</option>
+            <option value="7">- Laptops</option>
+            <option value="267">-- Chromebook</option>
+            <option value="268">-- ThinkPad</option>
+            <option value="8">- Tablets</option>
+            <option value="13">- Software</option>
+            <option value="14">- Video Games</option>
+            <option value="59">- Computer Accessories</option>
+            <option value="39">Electronics &amp; TVs</option>
+            <option value="40">- Electronics &amp; TVs</option>
+            <option value="62">- Refrigerator</option>
+            <option value="63">- Microwave Oven</option>
+            <option value="265">- Home Appliances</option>
+            <option value="46">Footwear</option>
+            <option value="47">- Shoes for Men</option>
+            <option value="159">-- Dress Shoes</option>
+            <option value="161">-- Brogues</option>
+            <option value="162">-- Derby</option>
+            <option value="163">-- Flip-flops</option>
+            <option value="164">-- Loafers</option>
+            <option value="165">-- Sandals</option>
+            <option value="166">-- Slip-on</option>
+            <option value="167">-- Sneakers</option>
+            <option value="177">-- Ankle Boots</option>
+            <option value="48">- Shoes for Women</option>
+            <option value="169">-- Ballet Shoes</option>
+            <option value="170">-- Espadrilles</option>
+            <option value="171">-- Loafers</option>
+            <option value="172">-- Mules</option>
+            <option value="173">-- Platform Shoes</option>
+            <option value="174">-- Pumps</option>
+            <option value="175">-- Sandals</option>
+            <option value="176">-- Sneakers</option>
+            <option value="178">-- Ankle Boots</option>
+            <option value="56">- Shoes for Boys</option>
+            <option value="57">- Shoes for Girls</option>
+            <option value="58">- Shoes for Newborns</option>
+            <option value="239">Furniture, Arts, &amp; Décor</option>
+            <option value="240">- Furniture &amp; Décor</option>
+            <option value="255">-- Fine Arts</option>
+            <option value="256">-- Hand-Made Decorative</option>
+            <option value="257">-- Curtains &amp; Blinds</option>
+            <option value="258">-- Sofas &amp; Couches</option>
+            <option value="241">- Mattresses</option>
+            <option value="263">-- Bed &amp; Accessories</option>
+            <option value="264">-- Mattresses</option>
+            <option value="141">Garden &amp; Pets Supplies</option>
+            <option value="142">- Home Garden</option>
+            <option value="143">- Pets Supplies</option>
+            <option value="242">Grocery &amp; Food Produce</option>
+            <option value="243">- Food Produce</option>
+            <option value="244">- Grocery &amp; Gourmet</option>
+            <option value="259">-- Rice</option>
+            <option value="260">-- Beans</option>
+            <option value="261">-- Condiments</option>
+            <option value="262">-- Non-Alcoholic Beverages</option>
+            <option value="248">Handbags &amp; Sunglasses</option>
+            <option value="249">- Bags &amp; Watches</option>
+            <option value="251">-- Handbags</option>
+            <option value="252">-- Purses</option>
+            <option value="253">-- Watches</option>
+            <option value="250">- Sunglasses</option>
+            <option value="254">-- Sunglasses</option>
+            <option value="77">Home Improvement &amp; Parts</option>
+            <option value="78">- Plumbing Materials</option>
+            <option value="79">- Roofing Materials</option>
+            <option value="80">- Tiles &amp; Marbles</option>
+            <option value="81">- Accessories</option>
+            <option value="83">-- Cements</option>
+            <option value="84">-- Concretes &amp; Sands</option>
+            <option value="85">-- Woods</option>
+            <option value="86">-- Doors &amp; Windows</option>
+            <option value="87">-- Paints &amp; Primers</option>
+            <option value="93">- Tools</option>
+            <option value="144">Industrial Machines</option>
+            <option value="145">- Industrial Machines</option>
+            <option value="147">-- Food Services</option>
+            <option value="148">-- Janitorial &amp; Sanitation</option>
+            <option value="149">-- Power &amp; Energy</option>
+            <option value="150">-- Automation</option>
+            <option value="151">-- IoT Manufacturing Equipment</option>
+            <option value="146">- Parts &amp; Accessories</option>
+            <option value="156">Kitchen Equipment</option>
+            <option value="157">- Food Preparation</option>
+            <option value="158">- Cooking Utensils</option>
+            <option value="245">Luggage &amp; Accessories</option>
+            <option value="246">- Luggage</option>
+            <option value="247">- Travel Accessories</option>
+            <option value="94">Musical Instruments &amp; Parts</option>
+            <option value="95">- Musical Instruments</option>
+            <option value="96">- Parts &amp; Accessories</option>
+            <option value="152">Sports &amp; Outdoors</option>
+            <option value="153">- Sports Equipment</option>
+            <option value="155">- Outdoors</option>
+            <option value="36">Video &amp; DVD, Audio</option>
+            <option value="37">- Wireless Speakers</option>
+            <option value="60">- Audio Accessories</option>
+            <option value="68">- DVD Players</option>
+            <option value="69">- Digital Audio Player</option>
+            <option value="49">Video Game Console</option>
+            <option value="50">- Game Consoles</option>
+            <option value="51">- Game Accessories</option>
+          </select>
           <input
             class="form-control"
+            style="width: 60%; border-radius: 0px"
             type="search"
             placeholder="Search Scudin Products"
             aria-label="Search"
           />
-          <button class="btn" type="submit">
+          <button
+            class="btn"
+            type="submit"
+            style="width: 10%; border-radius: 0px"
+          >
             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
@@ -415,7 +683,9 @@
         <div class="row my-5 g-5">
           <div class="col-lg-4 col-sm-12">
             <div class="card ms-lg-auto" style="width: 20rem">
-              <div class="card-header"><h4>Sell with Basic Plan</h4></div>
+              <div class="card-header">
+                <h4>Sell with Basic Plan</h4>
+              </div>
               <ul class="list-group-flush pe-4">
                 <li class="list-group-item mt-3">
                   $0.00 / (always), a monthly free plan to get started
@@ -432,7 +702,9 @@
 
           <div class="col-lg-4 col-sm-12">
             <div class="card mx-lg-auto" style="width: 20rem">
-              <div class="card-header"><h4>Sell with Business Plan</h4></div>
+              <div class="card-header">
+                <h4>Sell with Business Plan</h4>
+              </div>
               <ul class="list-group-flush pe-4">
                 <li class="list-group-item mt-3">
                   $29.99 / Month <br />
@@ -454,7 +726,7 @@
               <ul class="list-group-flush pe-4">
                 <li class="list-group-item mt-3">
                   $4,599.99 / Month <br />
-                  <span>(for Enterprise)</span>
+                  (for Enterprise)
                 </li>
 
                 <li class="list-group-item my-5">Unlimited Products / Month</li>
@@ -468,270 +740,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="mapping my-5 p-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-sm-12">
-            <h3 class="" style="width: 70%">
-              We Simplify The Complexity in The Ecommerce Services with The Best
-              Technology Solutions. We Drive Innovations by Helping Our Sellers
-              Reach Millions of Customers Worldwide.
-            </h3>
-            <button class="btn btn1 px-5 my-4">
-              Get Started by Signing Up Today
-            </button>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <h4 class="" style="width: 40%">
-              Start Selling. Let Your Products Reach Across The World!
-            </h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="blog">
-      <h1 class="text-center">Blog and Insights on Supply Chain</h1>
-      <div class="container">
-        <div class="row my-5">
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 p-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Blog Title</h5>
-                <p class="card-text text-muted">
-                  Content Summary <br />content summary
-                </p>
-                <a href="#" class="card-link">Read more...</a>
-                <div class="car-footer">
-                  <small href="#" class="text-muted">5 minute read</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="brand">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <img src="./Asset/client3 2.png" alt="" />
-          </div>
-          <div class="col-6">
-            <div class="d-flex gap-2">
-              <img
-                src="./Asset/Rectangle 58.png"
-                alt=""
-                class="img-fluid ngn-flag"
-              />
-              <img src="./Asset/Rectangle 59.png" alt="" class="img-fluid" />
-              <span
-                ><a
-                  class="dropdown-toggle fs-3"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  EN
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"># NGN</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Ê EUR</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">$CAD</a>
-                  </li>
-                </ul></span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-3">
-            <h4>Partners</h4>
-            <p>Manufacturers</p>
-          </div>
-          <div class="col-lg-3">
-            <h4>Company</h4>
-            <p>About Us</p>
-          </div>
-          <div class="col-lg-3">
-            <h4>Resources</h4>
-            <p>Sell on Scudin</p>
-          </div>
-          <div class="col-lg-3">
-            <h4>Legal</h4>
-            <p>Privacy Policy</p>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2022. Scudin.com, Inc. All Rights Reserved.</p>
       </div>
     </section>
 
