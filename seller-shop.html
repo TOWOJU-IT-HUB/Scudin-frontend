@@ -39,39 +39,44 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"
-              ><img src="./Asset/Group 17.png" alt=""
+              ><img
+                src="https://scudin.com/storage/app/public/company//96e698dfe07f0d9ab59ac19139acadbcc23f1118.jpg"
+                alt=""
+                width="130px"
             /></a>
-
-            <form class="ms-4" role="search" id="d-none">
-              <button class="btn dropdown" type="submit">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+            <form action="https://scudin.com/products" id="__search">
+              <input name="data_from" value="search" hidden="" />
+              <input name="page" value="1" hidden="" />
+              <div class="input-group my-group">
+                <select
+                  class="selectpicker form-control input-lg"
+                  style="width: 20%; border-radius: 0px"
+                  data-live-search="true"
+                  role="menu"
+                  name="category"
+                  id="category"
                 >
-                  All
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"># NGN</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Ê EUR</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">$CAD</a>
-                  </li>
-                </ul>
-              </button>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search Scudin Products"
-                aria-label="Search"
-              />
-              <button class="btn" type="submit">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-              </button>
+                  <option value="" disabled="" selected="">All</option>
+                  <option value="9">Apparel</option>
+                  <option value="10">- Men's Fashion</option>
+                  <option value="82">-- Coats</option>
+                  <option value="51">- Game Accessories</option>
+                </select>
+                <input
+                  type="text"
+                  autocomplete="off"
+                  style="width: 70%"
+                  class="form-control input-lg"
+                  name="name"
+                  value=""
+                  placeholder="Search Scudin Products"
+                />
+                <span class="input-group-btn" style="width: 5%">
+                  <button class="btn btn-default search-button" type="submit">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </span>
+              </div>
             </form>
 
             <button
@@ -149,7 +154,9 @@
                     <li>
                       <a class="dropdown-item" href="#">Another action</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
                     <li>
                       <a class="dropdown-item" href="#">Something else here</a>
                     </li>
