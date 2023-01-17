@@ -214,39 +214,7 @@
       </div>
     </div>
 
-    <section class="header2 bg-dark">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img src="./Asset/Vector.png" alt="" /> Categories</a
-            >
-            <button
-              class="navbar-toggler bg-light"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav gap-5 fs-5 ms-auto">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Scudin Ethos</a>
-                <a class="nav-link" href="#">About Us</a>
-                <a class="nav-link" href="#">Sell On Scudin</a>
-                <a class="nav-link" href="#">Contact Us</a>
-                <a class="nav-link" href="#">Contact Us</a>
-                <a class="nav-link" href="#">Support</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
+    <section id="header2"></section>
 
     <div class="text-end p-2">
       <div class="container">
@@ -922,26 +890,31 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class="text-center text-light p-2">
+            <div class="text-center p-2">
               <div>
-                <i class="fa-solid fa-house"></i>
-                <h5 class="fs-6">Home</h5>
+                <a href="#" class="text-dark">
+                  <i class="fa-solid fa-house"></i>
+                </a>
               </div>
               <div>
-                <i class="fa-solid fa-sliders"></i>
-                <h4 class="fs-6">Category</h4>
+                <a href="#" class="text-dark">
+                  <i class="fa-solid fa-sliders"></i>
+                </a>
               </div>
               <div>
-                <i class="fa-solid fa-wifi"></i>
-                <h5 class="fs-6">Feed</h5>
+                <a href="#" class="text-dark">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
               </div>
               <div>
-                <i class="fa-solid fa-user"></i>
-                <h5 class="fs-6">Account</h5>
+                <a href="#" class="text-dark">
+                  <i class="fa-solid fa-user"></i>
+                </a>
               </div>
               <div>
-                <i class="fa-solid fa-basket-shopping"></i>
-                <h5 class="fs-6">Orders</h5>
+                <a href="#" class="text-dark">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -966,4 +939,14 @@
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"
   ></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $("#header2").load("header2.html");
+  </script>
 </html>
