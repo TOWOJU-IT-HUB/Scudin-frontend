@@ -347,7 +347,8 @@ li {
 
 /* meiad query */
 @media screen and (max-width: 588px) {
-  .header form {
+  .header,
+  .header2 {
     display: none;
   }
   .ngn-flag {
@@ -370,12 +371,22 @@ li {
     align-items: center;
   }
   .mobile-search form {
-    width: 90%;
-    background-color: #5433ff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
+  .mobile-search input {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
   }
 }
 @media screen and (min-width: 588px) {
   .mobile-search {
+    display: none;
+  }
+  .mobile-logo {
     display: none;
   }
 }
