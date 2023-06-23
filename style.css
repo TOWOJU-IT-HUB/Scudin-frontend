@@ -538,3 +538,10 @@ li {
   font-weight: 700;
   line-height: 40px;
 }
+
+[type="text"]:focus,
+[typo="email"]:focus,
+[type="tel"]:focus,
+[type="number"]:focus {
+  --tw-ring-shadow: transparent !important;
+}
